@@ -19,7 +19,7 @@ const Company = () => {
   useEffect(()=>{
     const handleLoad= async(e)=>{  
       console.log("handleload");
-      axios.post('http://localhost:3000/findcompany',{cname})
+      axios.post('https://job-portal-9k8b.onrender.com/findcompany',{cname})
       .then(result=>{
         console.log(result)
         setPost(result.data)
