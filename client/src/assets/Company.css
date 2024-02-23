@@ -1,6 +1,6 @@
 .company{
   background-image: url('./images/last.jpg');
-  height: calc(100%+50px);
+  height: calc(100% + 50px);
   background-size: cover;
   color: white;
 }

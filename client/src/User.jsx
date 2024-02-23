@@ -11,7 +11,7 @@ const User = () => {
 
 useEffect(()=>{
     const handleLoad= async(e)=>{
-      axios.post('http://localhost:3000/needall')
+      axios.post('https://job-portal-9k8b.onrender.com/needall')
       .then(result=>{
         console.log(result)
         setPost(result.data)
