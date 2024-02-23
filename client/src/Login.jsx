@@ -15,7 +15,7 @@ const Login = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3000/login',{email,password})
+        axios.post('https://job-portal-9k8b.onrender.com/login',{email,password})
         .then(result=>{console.log(result)
          // console.log(result.data.id)
         if(result.data.message=="success")
@@ -30,7 +30,7 @@ const Login = () => {
 
     const handleCompany=(e)=>{
       e.preventDefault()
-      axios.post('http://localhost:3000/companylogin',{email,password})
+      axios.post('https://job-portal-9k8b.onrender.com/companylogin',{email,password})
       .then(result=>{console.log(result)
        // console.log(result.data.id)
       if(result.data.message=="success")
