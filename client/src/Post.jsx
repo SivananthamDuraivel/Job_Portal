@@ -13,7 +13,7 @@ const Post = () => {
     axios.post('http://localhost:3000/post',{jobtitle,companyname,desc,location,salary,contact})
     .then(result=>{
       console.log(result)
-        navigate('/home') 
+        // navigate('/company') 
     })
 }
 
@@ -27,17 +27,17 @@ const Post = () => {
   return (
     <div className='postbox'>
      <center>
-     <h2>Create New Post</h2>
+     <h2>Create New Post</h2><br />
      <form action="" className='form' onSubmit={handleSubmit}>
-     <input type="text" name="" id="" onChange={(e)=>setJobTitle(e.target.value)} placeholder='Enter the Job Title'/><br />
-     <input type="text" name="" id="" onChange={(e)=>setCompanyName(e.target.value)} placeholder='Enter the Company name'/><br />
-     <input type="text" name="" id="" onChange={(e)=>setDesc(e.target.value)} placeholder='Enter the Job Description'/><br />
+     <input  required type="text" name="" id="" onChange={(e)=>setJobTitle(e.target.value)} placeholder='Enter the Job Title'/><br />
+     <input  required type="text" name="" id="" onChange={(e)=>setCompanyName(e.target.value)} placeholder='Enter the Company name'/><br />
+     <input  required type="text" name="" id="" onChange={(e)=>setDesc(e.target.value)} placeholder='Enter the Job Description'/><br />
      
-         <input type="text" name="" id="" onChange={(e)=>setLocation(e.target.value)} placeholder='Enter Location'/><br />
-         <input type="text" name="" id="" onChange={(e)=>setSalary(e.target.value)} placeholder='Enter Salary'/><br />
-         <input type="text" name="" id="" onChange={(e)=>setContact(e.target.value)} placeholder='Contact Info'/><br />
+         <input required type="text" name="" id="" onChange={(e)=>setLocation(e.target.value)} placeholder='Enter Location'/><br />
+         <input required type="text" name="" id="" onChange={(e)=>setSalary(e.target.value)} placeholder='Enter Salary'/><br />
+         <input required type="text" name="" id="" onChange={(e)=>setContact(e.target.value)} placeholder='Contact Info'/><br />
 
-    <button>create post</button>
+    <button className='postbutton' style={{fontSize:'medium','padding':0}} ><p>create post</p></button>
  
    </form>
      </center>

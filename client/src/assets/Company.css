@@ -1,0 +1,68 @@
+.company{
+  background-image: url('./images/last.jpg');
+  height: calc(100%+50px);
+  background-size: cover;
+  color: white;
+}
+.cards-container {
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  
+  @media (min-width: 599px) {
+    .cards-container { grid-template-columns: repeat(1, 1fr); 
+    .card{
+        font-size: medium;
+    }
+    .cards{
+      width: 90%;
+    }
+  }
+  }
+
+  @media (min-width: 650px) {
+    .cards-container { grid-template-columns: repeat(2, 1fr); 
+    .card{
+        width: 40vw;
+        font-size: large;
+    }}
+  }
+  
+.card {
+  background-color:rgba(255, 255, 255, 0.104);
+  border: 1px solid;
+  color: rgba(255, 255, 255, 0.786);
+  padding: 1rem;
+  height: auto;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+.card b{
+  color:white;
+}
+h2{
+  padding-top: 1rem ;
+  color: red;
+  
+  font-size: 2rem ;
+}
+.addbutton{
+  margin-left: 3rem;
+  height: 6vh;
+  width: auto;
+  border: 1.5px solid red;
+  color: red;
+  background-color: transparent;
+}
+.jobtitle{
+  font-size: x-large;
+}
+.jd{
+  line-height: 1.4rem;
+}

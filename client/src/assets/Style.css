@@ -1,20 +1,27 @@
-
+.full{
+    background-image: url('./images/smoke.jpg');
+    background-size: cover;
+    height: max-content;
+    color: white;
+}
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin: auto;   
+    margin: auto; 
+    margin-top: -5rem;  
     height: 100vh;    
 }
 .form{
-    border: 1px solid black;
+    border: 1px solid red;
     padding: 3rem 3rem 3rem 3rem;
     display: flex;
     flex-direction: column;
     
 }
 .form input{
+    opacity: .65;
     height: 5vh;
     width: 30vw;
     border: none;
@@ -22,18 +29,23 @@
 }
 .form button{
     height: 6vh;
-    width: 15vw;
+    width: auto;
     margin: auto;
-    background-color:rgb(26, 118, 26);
-    color: white;
-    font-size: larger;
+    background-color:transparent;
+    color: red;
+    border: 1.5px solid red;
+    
 }
-
+a{
+    color: red;
+    text-decoration: none;
+}
 @media (max-width: 600px) {
     .container{
         width: 80%;
         align-items: center;
         justify-content: center;
+        margin-top: -5rem; 
     }
     .form {
       width: 95%;

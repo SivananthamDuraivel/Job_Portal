@@ -1,0 +1,86 @@
+
+.home{
+    background-image:url('./images/796169491973.jpg');
+    height: 100vh;
+    overflow-y:hidden;
+    background-size: cover;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:450;
+    line-height: 2em;
+    font-style: normal;
+}
+@media (max-width: 800px){
+    .home{
+    background-image:url("./images/phone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    }
+  }
+.titlecard{ 
+        font-family: "Akronim", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4rem;
+    color: red;
+    padding-top: 5rem;
+    padding-left: 4rem;
+}
+h3{
+    color: red;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.quote{
+    
+    padding-left: 3rem;
+    padding-top: 3rem;
+    width: 40vw;
+    color: white;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.05rem;
+}
+.buttons{
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    width: 20vw;
+    padding-left: 3rem;
+}
+.reg{
+    border: 1.5px solid red;
+    color: red;
+    background-color: transparent;
+    padding: 1rem;
+    width: 6rem;
+}
+.reg:hover{
+    border: 1.5px solid white;
+    color: white;
+    background-color: transparent;
+    cursor:pointer;
+}
+.log{
+    border: 1.5px solid white;
+    color: white;
+    background-color: transparent;
+    width: 6rem;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+.log:hover{
+    border: 1.5px solid red;
+    color: red;
+    background-color: transparent;
+    cursor:pointer;
+}

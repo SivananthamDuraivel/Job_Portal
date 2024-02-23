@@ -15,9 +15,11 @@ const Navbar = () => {
     <div>
     <div className="topnav" id="myTopnav">
     <a href="/" className="active">Home</a>
+    <div className='rightend'>
     <a href="/login">Login</a>
     <a href="/register">Sign-up</a>
     <a href="#about">About</a>
+    </div>
     <a href="#" className="icon" onClick={myFunction}>
       <span>☰</span>
     </a>
