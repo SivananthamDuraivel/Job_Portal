@@ -10,7 +10,7 @@ const Post = () => {
   
   const handleSubmit=(e)=>{
     e.preventDefault()
-    axios.post('http://localhost:3000/post',{jobtitle,companyname,desc,location,salary,contact})
+    axios.post('https://job-portal-9k8b.onrender.com/post',{jobtitle,companyname,desc,location,salary,contact})
     .then(result=>{
       console.log(result)
         // navigate('/company') 
